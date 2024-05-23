@@ -18,4 +18,4 @@ COPY requirements.txt /usr/src/app/"${BOT_NAME:-kidney_scanner}"
 RUN pip install -r /usr/src/app/"${BOT_NAME:-kidney_scanner}"/requirements.txt
 COPY . /usr/src/app/"${BOT_NAME:-notif_bot}"
 
-CMD python3 app.py
+CMD python3 -m app

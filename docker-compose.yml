@@ -7,7 +7,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
-    command: python3 app.py
+    command: python3 -m app
     restart: always
 #    env_file: .env
     environment:
