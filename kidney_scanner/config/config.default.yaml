@@ -1,0 +1,7 @@
+LOG_CONFIG: './config/config_logs.yaml'
+M_START_METHOD: 'fork'
+BOT_TOKEN: '7155006813:AAEqfY_CaVWb_A0bA09PZbNTJ7k5d-Jbl2U'
+WEIGHTS_PATH: './weights/best.pt'
+ORIGIN_SAVE_PATH: './downloaded_images'
+PROCESSES_SAVE_PATH: './processed_images'
+TXT_SAVE_PATH: './txt'

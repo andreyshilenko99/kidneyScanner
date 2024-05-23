@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  bot:
+    image: python:3.11
+    container_name: ${PROJECT_NAME}-bot
+    build:
+      dockerfile: Dockerfile
+      context: .
+    command: python3 app.py
+    restart: always
+    depends_on:
+      - db
+#    env_file: .env
+    environment:
+      - TZ=Europe/Moscow
