@@ -1,6 +1,6 @@
 import multiprocessing
 
-from kidney_scanner.logs import Logger
+from logs import Logger
 
 
 class FileSave(multiprocessing.Process):

@@ -13,9 +13,10 @@ FROM python:3.11
 #ENV LOG_FILE=$LOG_FILE
 #ENV TZ=$TZ
 
-WORKDIR /usr/src/app/"${BOT_NAME:-kidney_scanner}"
-COPY requirements.txt /usr/src/app/"${BOT_NAME:-kidney_scanner}"
-RUN pip install -r /usr/src/app/"${BOT_NAME:-kidney_scanner}"/requirements.txt
-COPY . /usr/src/app/"${BOT_NAME:-notif_bot}"
+WORKDIR /usr/src/app/"${kidney_scanner}"
+COPY requirements.txt /usr/src/app/"${kidney_scanner}"
+RUN pip install -r /usr/src/app/"${kidney_scanner}"/requirements.txt
+COPY . /usr/src/app/"${kidney_scanner}"
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
-CMD python3 -m app
+CMD python3 -m app --config ./config/config.yaml

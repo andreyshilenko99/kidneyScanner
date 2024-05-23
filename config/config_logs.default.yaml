@@ -33,7 +33,7 @@ handlers:
     class: logging.handlers.RotatingFileHandler
 #    level: DEBUG
     formatter: json
-    filename: ./logs/imitator.jsonl
+    filename: ../logs/imitator.jsonl
     maxBytes: 100000
     backupCount: 3
   queue_handler:

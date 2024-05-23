@@ -4,8 +4,8 @@ import multiprocessing
 
 from aiogram import Dispatcher, types
 
-from kidney_scanner.logs import Logger
-from kidney_scanner.settings import Config
+from logs import Logger
+from settings import Config
 
 
 class BotService(multiprocessing.Process):

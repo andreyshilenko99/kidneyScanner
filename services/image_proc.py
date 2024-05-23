@@ -3,9 +3,9 @@ import threading
 
 import cv2
 import numpy as np
-from kidney_scanner.logs import Logger
-from kidney_scanner.settings import Config
-from kidney_scanner.utils import process_image_and_get_bytes
+from logs import Logger
+from settings import Config
+from utils import process_image_and_get_bytes
 
 
 class ImageProcessor(threading.Thread):

@@ -1,10 +1,10 @@
 import multiprocessing
 
-from kidney_scanner.settings import get_args, Config
+from settings import get_args, Config
 
 
 def launch_core():
-    from kidney_scanner.app.core import core
+    from app.core import core
     loop = core()
     loop.run_forever()
 

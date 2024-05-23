@@ -7,11 +7,11 @@ from functools import partial
 import psutil
 from aiogram import Bot
 
-from kidney_scanner.services.bot import BotService
-from kidney_scanner.services.image_proc import ImageProcessor
-from kidney_scanner.services.file_save import FileSave
-from kidney_scanner.services.send import Sender
-from kidney_scanner.settings import Config
+from services.bot import BotService
+from services.image_proc import ImageProcessor
+from services.file_save import FileSave
+from services.send import Sender
+from settings import Config
 
 
 def core():

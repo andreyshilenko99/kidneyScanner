@@ -2,8 +2,8 @@ import threading
 
 import requests
 
-from kidney_scanner.logs import Logger
-from kidney_scanner.settings import Config
+from logs import Logger
+from settings import Config
 
 
 class Sender(threading.Thread):
